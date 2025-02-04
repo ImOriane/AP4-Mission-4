@@ -1,0 +1,80 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outils Gestion CROSL</title>
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <!-- Fond principal avec un dégradé -->
+    <div class="background">
+        <!-- Rectangle central -->
+        <div class="main-container">
+            <!-- Barre latérale gauche -->
+            <div class="sidebar">
+
+                    <a href="index.html">
+                        <img class=home src="img/home.png">
+                    </a>
+     
+
+                <!-- Boutons de la barre latérale -->
+                <div class="boutonsbar">
+                    <button class="sidebar-btn" onclick="location.href='outil_de_factures.html'">Outil factures</button>
+                    <button class="sidebar-btn" onclick="location.href='Archive_factures.html'">Archive factures</button>
+                    <button class="sidebar-btn" onclick="location.href='Gestion_BD.html'">Gestion base de données</button>
+                </div>
+            </div>
+            <!-- Section droite -->
+            
+            <div class="content-GBB-Prestation">
+             
+
+                <div class="formulairepresta">
+                    <div class="form">
+                        <h2>Gestion Prestation</h2> 
+                        Code prestation :
+                        <br>
+                        <input type="text" placeholder="Code prestation">
+                        Référence :
+                        <br>
+                        <input type="text" placeholder="Référence">
+                        <br>
+                        <br>
+                        Désignation du produit :<br>
+                        <input type="text" placeholder="Désignation du produit">
+                        <br>
+                        <br>
+                        Nombre d'article:<br>
+                        <input type="number" name="qt" min="1" max="999999" step="1" value="1">
+                        <br>
+                        <br>
+                        Prix unitaire HT:<br>
+                        <input type="number" min="0.00" max="10000.00" step="0.01" value="1.00" />                         
+                        <br>
+                        <br>
+                        Montant total TTC:<br>
+                        <input type="text" placeholder="Montant TTC (calcul auto)">           
+                        <br>
+                            
+                        <br>
+                        <button class="formbutton">Annuler</button>
+                        <button class="formbutton">Enregistrer</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+    <!-- Lien vers le fichier JavaScript -->
+    <script src="js/java.js"></script>
+</body>
+</html

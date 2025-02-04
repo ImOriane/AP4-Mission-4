@@ -1,0 +1,383 @@
+/* CSS */
+
+
+@font-face {
+	font-family: 'Tommy';
+	src: url('../font/made_tommy.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'TommyLight';
+	src: url('../font/made_tommy_light.otf') format('opentype');
+}
+
+
+body { 
+    margin: 0;
+    padding: 0;
+} 
+/* Pour eviter les contours blanc autours du site*/
+/* Fond principal avec un dégradé du bleu foncé au vert */
+.background {
+    background: linear-gradient(to bottom, #3B556D, #5FC2BA);
+    height: 100vh; /* Prend toute la hauteur de l'écran */
+    display: flex; /* Flexbox pour organiser les enfants (barre latérale et contenu) en ligne */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+}
+
+/* Rectangle central */
+.main-container {
+    background: #EBEBEB; /* Couleur de fond blanche */
+    border-radius: 15px; /* Coins arrondis */
+    display: flex;
+    width: 80%; /* Largeur relative à l'écran */
+    height: 80%; /* Hauteur relative à l'écran */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ombre légère */
+}
+
+/* Barre latérale */
+.sidebar {
+    background: #0B162C; /* Couleur bleue foncée */
+    width: 20%; /* Largeur de la barre latérale */
+    border-top-left-radius: 15px; /* Coin arrondi en haut */
+    border-bottom-left-radius: 15px; /* Coin arrondi en bas */
+    
+}
+
+.home{
+    width: 40px;
+    height: 35px;
+    padding-top: 15px;
+    padding-left: 15px;
+    
+
+
+}
+
+.home:hover{
+    transform: scale(1.1);
+
+
+}
+.boutonsbar{
+    padding: 150px 20px; /* Augmente l'espacement en haut */
+    display: flex;
+    flex-direction: column; /* Empile les boutons verticalement */
+    gap: 20px; /* Espacement entre les boutons */
+
+}
+
+
+
+/* Boutons de la barre latérale */
+.sidebar-btn {
+    font-family: 'Tommy';
+    background: #EBEBEB; /* Couleur de fond blanche */
+    border: none; /* Supprime les bordures */
+    border-radius: 20px; /* Coins légèrement arrondis */
+    padding: 10px; /* Réduit l'épaisseur du bouton */
+    font-size: 16px; /* Taille du texte */
+    cursor: pointer; /* Curseur interactif */
+    transition: background 0.3s; /* Animation pour hover */
+}
+
+.sidebar-btn:hover {
+    background: #5FC2BA; /* Change de couleur au survol */
+    color: white; /* Texte blanc au survol */
+}
+
+/* Section droite */
+.content {
+    flex: 1; /* Prend tout l'espace restant */
+    padding: 20px; /* Espacement interne */
+    text-align: center; /* Centre le texte */
+}
+.contentfacture {
+    display:flex;
+    padding: 30px; /* Espacement interne */
+    text-align: center; /* Centre le texte */
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.contentfacture {
+    display:flex;
+    padding: 0px; /* Espacement interne */
+    text-align: center; /* Centre le texte */
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+/* Titre principal */
+h1 {
+    font-family:'TommyLight';
+    padding: 55px;
+    font-size: 60px;
+    color: #112240; /* Même bleu que la barre latérale */
+    margin-bottom: 20px; /* Espacement sous le titre */
+}
+
+.content-GBB-Ligue{
+    display:flex;
+    padding: 20px; /* Espacement interne */
+    text-align: center; /* Centre le texte */
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+
+
+.content-GBB-Prestation{
+    display:flex;
+    padding: 20px; /* Espacement interne */
+    text-align: center; /* Centre le texte */
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+
+
+.p{
+    font-family: 'Tommy';
+    font-size: 25px;
+    color: #112240; /* Même bleu que la barre latérale */
+    margin-bottom: 20px; /* Espacement sous le texte */
+}
+
+
+/* Cartes */
+.cards {
+    display: flex;
+    padding: 25px;
+    justify-content: center; /* Centre les cartes horizontalement */
+    gap: 60px; /* Espacement entre les cartes */
+}
+
+/* Style de chaque carte */
+.card {
+    cursor: pointer; /* Curseur interactif */
+    background: white; /* Fond gris clair */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 30px; /* Espacement interne */
+    width: 150px; /* Largeur fixe */
+    text-align: center; /* Centre le contenu */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    transition: transform 0.3s; /* Animation pour hover */
+    }
+
+.card:hover {
+    transform: scale(1.05); /* Agrandissement au survol */
+    background: #5FC2BA; /* Change de couleur au survol */
+    color: #EBEBEB; /* Texte blanc au survol */
+    /*transition: transform 0.3s ease, filter 0.3s ease;
+    filter: brightness(70%);*/
+}
+
+/* Icônes dans les cartes */
+.card img {
+    width: 120px; /* Taille fixe de l'icône */
+    height: auto; /* Conserve les proportions */
+    margin-bottom: 10px; /* Espacement sous l'icône */
+}
+
+/* Texte dans les cartes */
+.card p {
+    font-size: 20px;
+    color: #112240; /* Même bleu que le titre */
+    font-family: "Tommy";
+     text-decoration: none;
+
+}
+
+.formulaire {
+    font-family: "tommy";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    margin: 0 auto;
+    max-width: 350px;
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+    transform:scale(1.0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Effet d’ombre léger */
+}
+
+
+.formulairepresta {
+    font-family: "tommy";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    margin: 0 auto;
+    max-width: 350px;
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+    transform:scale(0.9);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Effet d’ombre léger */
+}
+
+.formulairefacture {
+    font-family: "tommy";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    transform:scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Effet d’ombre léger */
+}
+
+
+.formbutton{
+
+    text-decoration: none;
+    padding: 10px 18px;
+    font-size: 0.9em;
+    color: #FFFFFF;
+    background-color: #112240;
+    border-radius: 34px;
+    -webkit-border-radius: 34px;
+    -moz-border-radius: 34px;
+    cursor: pointer;
+    
+}
+
+.formbutton:hover{ 
+    box-shadow: 1px 1px 2px #444444;
+    -webkit-box-shadow: 1px 1px 2px #444444;
+    -moz-box-shadow: 1px 1px 2px #444444;
+
+}
+
+.formulaire input {
+    width: 100%; /* Prend toute la largeur */
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Empêche le débordement */
+}
+
+.formulairepresta input {
+    width: 100%; /* Prend toute la largeur */
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Empêche le débordement */
+}
+.formulairefacture input {
+    width: 100%; /* Prend toute la largeur */
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Empêche le débordement */
+}
+.bouton-imprimer {
+    margin-top: 20px;
+    background-color: #112240; /* Couleur de fond sombre */
+    color: white; /* Texte blanc */
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    padding: 28px 53px; /* Ajuste l'espacement interne */
+    border: none;
+    border-radius: 50px; /* Bordures arrondies */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+/* Effet au survol */
+.bouton-imprimer:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+td{
+    border: 1px solid #112240;
+    padding: 10px;
+}
+
+table{
+    background-color: white;
+    border: 3px solid #112240;
+    text-align: center;
+    scale: 1;
+    width:980px;
+    font-family: "Tommy";
+
+}
+h6{
+    color: rgb(0, 0, 117);
+    font-size: 50px;
+    text-align: center;
+}
+
+
+
+
+th{
+    background-color: #112240;
+    font-family: 'Tommy';
+    color: #EBEBEB;
+    border: 1px solid #112240;
+    padding: 15px;
+}
+
+.centrerfacture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#searchBar{
+    width: 950px;
+}
+
+.search {
+    padding: 12px 24px;
+    background-color: transparent;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: ;
+    color: #0B162C;
+    background-color: transparent;
+
+
+}
+
+.search:hover {
+    padding: 6px 0;
+    outline: 0;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #575756;
+    border-radius: 0;
+    background-position: 100% center;
+}
+
+.search:placeholder{
+    color: color(#575756 a(0.8));
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+   
+

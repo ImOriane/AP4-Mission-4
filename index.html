@@ -1,0 +1,62 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outils Gestion CROSL</title>
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <!-- Fond principal avec un dégradé -->
+    <div class="background">
+        <!-- Rectangle central -->
+        <div class="main-container">
+            <!-- Barre latérale gauche -->
+            <div class="sidebar">
+
+                <a href="index.html">
+                    <img class=home src="img/home.png">
+                </a>
+ 
+
+            <!-- Boutons de la barre latérale -->
+            <div class="boutonsbar">
+                <button class="sidebar-btn" onclick="location.href='outil_de_factures.html'">Outil factures</button>
+                <button class="sidebar-btn" onclick="location.href='Archive_factures.html'">Archive factures</button>
+                <button class="sidebar-btn" onclick="location.href='Gestion_BD.html'">Gestion base de données</button>
+            </div>
+        </div>
+            <!-- Section droite avec cartes -->
+            <div class="content">
+                <h1>Outils gestion CROSL</h1>
+                <div class="cards">
+                    <!-- Carte 1 -->
+                    <div class="card">
+                        <a href="outil_de_factures.html"style="text-decoration:none">
+                            <img src="img/icon1.png">
+                            <p>Outil factures</p>
+                        </a>
+                    </div>
+                    <!-- Carte 2 -->
+                    <div class="card">
+                        <a href="Archive_factures.html"style="text-decoration:none">
+                            <img src="img/icon2.png">
+                            <p>Archive factures</p>
+                        </a>
+                    </div>
+                    <!-- Carte 3 -->
+                    <div class="card">                        
+                        <a href="Gestion_BD.html"style="text-decoration:none">
+                            <img src="img/icon3.png">
+                            <p>Gestion base de données</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Lien vers le fichier JavaScript -->
+    <script src="js/java.js"></script>
+</body>
+</html>
