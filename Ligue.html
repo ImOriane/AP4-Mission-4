@@ -24,7 +24,7 @@
             <div class="boutonsbar">
                 <button class="sidebar-btn" onclick="location.href='outil_de_factures.html'">Création de factures</button>
                 <button class="sidebar-btn" onclick="location.href='Archive_factures.html'">Retrouver factures</button>
-                <button class="sidebar-btn" onclick="location.href='Gestion_BD.html'">Gestion des ligues et prestations</button>
+                <button class="sidebar-btn" onclick="location.href='Gestion_BD.html'">Gestion ligues et prestations</button>
             </div>
         </div>
             <!-- Section droite -->
@@ -38,21 +38,31 @@
                         <input type="text" placeholder="Code ligue">                      
                         <br>
                         <br>
+                        Nom de la ligue :<br>
+                        <input type="text" placeholder="Nom de la ligue">                      
+                        <br>
+                        <br>
                         Trésorier :
                         <br>
                         <input type="text" placeholder="Trésorier">
                         <br>
                         <br>
-                        Adresse du trésorier :<br>
-                        <input type="text" placeholder="Adresse du trésorier">
+                        Revoir chez vous? :
+                        <button onclick="verifierReponse(true)">Oui</button>
+                        <button onclick="verifierReponse(false)">Non</button>
                         <br>
                         <br>
-                        Ville trésorier : <br>
-                        <input type="text" placeholder="Ville trésorier ">
-                        <br>
-                        <br>
-                        
-                        Sport de la ligue::<br>
+                        <div class="cacher">
+                            Adresse du trésorier :<br>
+                            <input type="text" placeholder="Adresse du trésorier">
+                            <br>
+                            <br>
+                            Ville trésorier : <br>
+                            <input type="text" placeholder="Ville trésorier ">
+                            <br>
+                            <br>
+                        </div>
+                        Sport de la ligue:<br>
                         <input type="text" placeholder="Sport de la ligue">         
                         <br>
                             

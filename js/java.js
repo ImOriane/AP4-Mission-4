@@ -16,3 +16,13 @@ document.getElementById("searchBar").addEventListener("keyup", function() {
         rows[i].style.display = found ? "" : "none"; // Affiche ou cache la ligne
     }
 });
+
+
+function verifierReponse(reponse) {
+    const element = document.querySelector(".cacher");
+    if (reponse === true) {
+        element.style.display = "block";
+    } else {
+        element.style.display = "none";
+    }
+}

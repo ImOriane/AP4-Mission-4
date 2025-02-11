@@ -377,5 +377,8 @@ th{
     text-transform: uppercase;
     letter-spacing: 1.5px;
 }
-   
+
+.cacher{
+    display: none;
+}
 
