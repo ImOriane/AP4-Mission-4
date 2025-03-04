@@ -220,7 +220,7 @@ h1 {
     width: 100%;
     background: white;
     border-radius: 15px;
-    transform:scale(0.9);
+    transform:scale(1.0);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Effet d’ombre léger */
 }
 
@@ -233,7 +233,7 @@ h1 {
     margin: 0 auto;
     background: white;
     border-radius: 15px;
-    transform:scale(1.1);
+    transform:scale(1.0);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Effet d’ombre léger */
 }
 
@@ -272,8 +272,8 @@ h1 {
 
 .formulairepresta input {
     width: 100%; /* Prend toute la largeur */
-    padding: 10px;
-    margin-top: 5px;
+    padding: 25px;
+    margin-top: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
