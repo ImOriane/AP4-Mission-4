@@ -9,24 +9,29 @@ CREATE TABLE ligue (
     tresorier VARCHAR(50),
     adresse_tresorier VARCHAR(50),
     ville_tresorier VARCHAR(50),
+    tresorier VARCHAR(50),
     sport VARCHAR(50),
     PRIMARY KEY (code_ligue)
 ) ENGINE = InnoDB;
 
 CREATE TABLE prestation (
-    code_prestation VARCHAR(50),
-    reference VARCHAR(50),
-    Désignation_du_produit varchar(50),
+    Reference VARCHAR(50),
+    Designation_du_produit VARCHAR(50),
     pu varchar(50),
-    PRIMARY KEY (code_prestation)
+    PRIMARY KEY (Reference)
 ) ENGINE = InnoDB;
 
 CREATE TABLE facture (
-    code_prestation VARCHAR(50),
-    code_ligue VARCHAR(50),
     numfacture INT,
     facture_date DATE,
-    echeance DATE,    
-    quantite INT,
+    echeance DATE,
+    code_ligue VARCHAR(50),
     PRIMARY KEY (numfacture)
+) ENGINE = InnoDB;
+
+CREATE TABLE ligue_facture (
+    numfacture INT,
+    Reference VARCHAR(50),
+    quantite INT,
+    PRIMARY KEY (numfacture, Reference)
 ) ENGINE = InnoDB;
