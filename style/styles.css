@@ -34,6 +34,7 @@ body {
     width: 80%; /* Largeur relative à l'écran */
     height: 80%; /* Hauteur relative à l'écran */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    overflow: hidden; /* Empêche le débordement */
 }
 
 /* Barre latérale */
@@ -92,6 +93,7 @@ body {
     flex: 1; /* Prend tout l'espace restant */
     padding: 20px; /* Espacement interne */
     text-align: center; /* Centre le texte */
+    overflow: auto; /* Ajoute une barre de défilement si nécessaire */
 }
 .contentfacture {
     display:flex;
@@ -100,6 +102,7 @@ body {
     justify-content: center;
     margin: 0 auto;
     flex-direction: column;
+    overflow: auto; /* Ajoute une barre de défilement si nécessaire */
 }
 .contentfacture {
     display:flex;
@@ -126,6 +129,7 @@ h1 {
     justify-content: center;
     margin: 0 auto;
     flex-direction: column;
+    overflow: auto; /* Ajoute une barre de défilement si nécessaire */
 }
 
 
@@ -137,6 +141,7 @@ h1 {
     justify-content: center;
     margin: 0 auto;
     flex-direction: column;
+    overflow: auto; /* Ajoute une barre de défilement si nécessaire */
 }
 
 
@@ -155,6 +160,7 @@ h1 {
     padding: 25px;
     justify-content: center; /* Centre les cartes horizontalement */
     gap: 60px; /* Espacement entre les cartes */
+    overflow: hidden; /* Empêche le débordement */
 }
 
 /* Style de chaque carte */
@@ -167,6 +173,7 @@ h1 {
     text-align: center; /* Centre le contenu */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
     transition: transform 0.3s; /* Animation pour hover */
+    overflow: hidden; /* Empêche le débordement */
     }
 
 .card:hover {
