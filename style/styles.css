@@ -204,8 +204,11 @@ h1 {
     width: 100%;
     background: white;
     border-radius: 15px;
-    transform:scale(1.0);
+    transform: scale(1.0);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Effet d’ombre léger */
+    max-width: 100%; /* Limite la largeur maximale à 100% du conteneur parent */
+    overflow: auto; /* Ajoute une barre de défilement si nécessaire */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
 }
 
 
@@ -222,6 +225,9 @@ h1 {
     border-radius: 15px;
     transform:scale(1.0);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Effet d’ombre léger */
+    max-width: 100%; /* Limite la largeur maximale à 100% du conteneur parent */
+    overflow: hidden; /* Empêche le débordement horizontal */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
 }
 
 .formulairefacture {
@@ -235,6 +241,9 @@ h1 {
     border-radius: 15px;
     transform:scale(1.0);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Effet d’ombre léger */
+    max-width: 100%; /* Limite la largeur maximale à 100% du conteneur parent */
+    overflow: hidden; /* Empêche le débordement horizontal */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
 }
 
 
@@ -381,4 +390,3 @@ th{
 .cacher{
     display: none;
 }
-
