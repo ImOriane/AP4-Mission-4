@@ -1,0 +1,64 @@
+[11-Mar-2025 13:48:50 UTC] PHP Warning:  Undefined array key "Reference" in /media/sf_OrianeDoPHP/AP4-Mission-4/prestation.php on line 7
+[11-Mar-2025 13:48:50 UTC] PHP Warning:  Undefined array key "Desgination_du_produit" in /media/sf_OrianeDoPHP/AP4-Mission-4/prestation.php on line 8
+[11-Mar-2025 13:48:50 UTC] PHP Warning:  Undefined array key "pu" in /media/sf_OrianeDoPHP/AP4-Mission-4/prestation.php on line 9
+[11-Mar-2025 13:48:50 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'Desgination_du_produit' in 'field list' in /media/sf_OrianeDoPHP/AP4-Mission-4/prestation.php:16
+Stack trace:
+#0 /media/sf_OrianeDoPHP/AP4-Mission-4/prestation.php(16): mysqli->query()
+#1 {main}
+  thrown in /media/sf_OrianeDoPHP/AP4-Mission-4/prestation.php on line 16
+[11-Mar-2025 13:49:10 UTC] PHP Warning:  Undefined array key "Reference" in /media/sf_OrianeDoPHP/AP4-Mission-4/prestation.php on line 7
+[11-Mar-2025 13:49:10 UTC] PHP Warning:  Undefined array key "Desgination_du_produit" in /media/sf_OrianeDoPHP/AP4-Mission-4/prestation.php on line 8
+[11-Mar-2025 13:49:10 UTC] PHP Warning:  Undefined array key "pu" in /media/sf_OrianeDoPHP/AP4-Mission-4/prestation.php on line 9
+[11-Mar-2025 13:49:10 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'Desgination_du_produit' in 'field list' in /media/sf_OrianeDoPHP/AP4-Mission-4/prestation.php:16
+Stack trace:
+#0 /media/sf_OrianeDoPHP/AP4-Mission-4/prestation.php(16): mysqli->query()
+#1 {main}
+  thrown in /media/sf_OrianeDoPHP/AP4-Mission-4/prestation.php on line 16
+[11-Mar-2025 13:49:12 UTC] PHP Warning:  Undefined array key "Reference" in /media/sf_OrianeDoPHP/AP4-Mission-4/prestation.php on line 7
+[11-Mar-2025 13:49:12 UTC] PHP Warning:  Undefined array key "Desgination_du_produit" in /media/sf_OrianeDoPHP/AP4-Mission-4/prestation.php on line 8
+[11-Mar-2025 13:49:12 UTC] PHP Warning:  Undefined array key "pu" in /media/sf_OrianeDoPHP/AP4-Mission-4/prestation.php on line 9
+[11-Mar-2025 13:49:12 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'Desgination_du_produit' in 'field list' in /media/sf_OrianeDoPHP/AP4-Mission-4/prestation.php:16
+Stack trace:
+#0 /media/sf_OrianeDoPHP/AP4-Mission-4/prestation.php(16): mysqli->query()
+#1 {main}
+  thrown in /media/sf_OrianeDoPHP/AP4-Mission-4/prestation.php on line 16
+[11-Mar-2025 13:49:20 UTC] PHP Warning:  Undefined array key "Reference" in /media/sf_OrianeDoPHP/AP4-Mission-4/prestation.php on line 7
+[11-Mar-2025 13:49:20 UTC] PHP Warning:  Undefined array key "Desgination_du_produit" in /media/sf_OrianeDoPHP/AP4-Mission-4/prestation.php on line 8
+[11-Mar-2025 13:49:20 UTC] PHP Warning:  Undefined array key "pu" in /media/sf_OrianeDoPHP/AP4-Mission-4/prestation.php on line 9
+[11-Mar-2025 13:49:20 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'Desgination_du_produit' in 'field list' in /media/sf_OrianeDoPHP/AP4-Mission-4/prestation.php:16
+Stack trace:
+#0 /media/sf_OrianeDoPHP/AP4-Mission-4/prestation.php(16): mysqli->query()
+#1 {main}
+  thrown in /media/sf_OrianeDoPHP/AP4-Mission-4/prestation.php on line 16
+[11-Mar-2025 13:49:40 UTC] PHP Warning:  Undefined array key "Reference" in /media/sf_OrianeDoPHP/AP4-Mission-4/Prestation.php on line 7
+[11-Mar-2025 13:49:40 UTC] PHP Warning:  Undefined array key "Desgination_du_produit" in /media/sf_OrianeDoPHP/AP4-Mission-4/Prestation.php on line 8
+[11-Mar-2025 13:49:40 UTC] PHP Warning:  Undefined array key "pu" in /media/sf_OrianeDoPHP/AP4-Mission-4/Prestation.php on line 9
+[11-Mar-2025 13:49:40 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'Desgination_du_produit' in 'field list' in /media/sf_OrianeDoPHP/AP4-Mission-4/Prestation.php:16
+Stack trace:
+#0 /media/sf_OrianeDoPHP/AP4-Mission-4/Prestation.php(16): mysqli->query()
+#1 {main}
+  thrown in /media/sf_OrianeDoPHP/AP4-Mission-4/Prestation.php on line 16
+[11-Mar-2025 13:52:20 UTC] PHP Warning:  Undefined array key "Reference" in /media/sf_OrianeDoPHP/AP4-Mission-4/Prestation.php on line 7
+[11-Mar-2025 13:52:20 UTC] PHP Warning:  Undefined array key "Desgination_du_produit" in /media/sf_OrianeDoPHP/AP4-Mission-4/Prestation.php on line 8
+[11-Mar-2025 13:52:20 UTC] PHP Warning:  Undefined array key "pu" in /media/sf_OrianeDoPHP/AP4-Mission-4/Prestation.php on line 9
+[11-Mar-2025 13:52:20 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'Desgination_du_produit' in 'field list' in /media/sf_OrianeDoPHP/AP4-Mission-4/Prestation.php:16
+Stack trace:
+#0 /media/sf_OrianeDoPHP/AP4-Mission-4/Prestation.php(16): mysqli->query()
+#1 {main}
+  thrown in /media/sf_OrianeDoPHP/AP4-Mission-4/Prestation.php on line 16
+[11-Mar-2025 13:52:39 UTC] PHP Warning:  Undefined array key "Reference" in /media/sf_OrianeDoPHP/AP4-Mission-4/Prestation.php on line 7
+[11-Mar-2025 13:52:39 UTC] PHP Warning:  Undefined array key "Desgination_du_produit" in /media/sf_OrianeDoPHP/AP4-Mission-4/Prestation.php on line 8
+[11-Mar-2025 13:52:39 UTC] PHP Warning:  Undefined array key "pu" in /media/sf_OrianeDoPHP/AP4-Mission-4/Prestation.php on line 9
+[11-Mar-2025 13:52:39 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'Desgination_du_produit' in 'field list' in /media/sf_OrianeDoPHP/AP4-Mission-4/Prestation.php:16
+Stack trace:
+#0 /media/sf_OrianeDoPHP/AP4-Mission-4/Prestation.php(16): mysqli->query()
+#1 {main}
+  thrown in /media/sf_OrianeDoPHP/AP4-Mission-4/Prestation.php on line 16
+[11-Mar-2025 13:52:43 UTC] PHP Warning:  Undefined array key "Reference" in /media/sf_OrianeDoPHP/AP4-Mission-4/Prestation.php on line 7
+[11-Mar-2025 13:52:43 UTC] PHP Warning:  Undefined array key "Desgination_du_produit" in /media/sf_OrianeDoPHP/AP4-Mission-4/Prestation.php on line 8
+[11-Mar-2025 13:52:43 UTC] PHP Warning:  Undefined array key "pu" in /media/sf_OrianeDoPHP/AP4-Mission-4/Prestation.php on line 9
+[11-Mar-2025 13:52:43 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'Desgination_du_produit' in 'field list' in /media/sf_OrianeDoPHP/AP4-Mission-4/Prestation.php:16
+Stack trace:
+#0 /media/sf_OrianeDoPHP/AP4-Mission-4/Prestation.php(16): mysqli->query()
+#1 {main}
+  thrown in /media/sf_OrianeDoPHP/AP4-Mission-4/Prestation.php on line 16

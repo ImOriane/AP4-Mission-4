@@ -53,7 +53,7 @@ $conn->close();
             
             <div class="content-GBB-Prestation">
              
-            <form action="ajouter_utilisateur.php" method="POST">
+            <form action="Prestation.php" method="POST">
                 <div class="formulairepresta" >
                     <div class="form">
                         <h2>Gestion Prestation</h2>
@@ -63,15 +63,15 @@ $conn->close();
                         <br>
                         Référence :
                         <br>
-                        <input type="text" placeholder="Référence">
+                        <input type="text" id="Reference" placeholder="Référence">
                         <br>
                         <br>
                         Désignation du produit :<br>
-                        <input type="text" placeholder="Désignation du produit">
+                        <input type="text" id="Desgination_du_produit" placeholder="Désignation du produit">
                         <br>
                         <br>
                         Prix unitaire HT:<br>
-                        <input type="number" min="0.00" max="10000.00" step="0.01" value="1.00" />                         
+                        <input type="number" id="pu" min="0.00" max="10000.00" step="0.01" value="1.00" />                         
                         <br>
                         <br>
                         <button class="formbutton">Annuler</button>
