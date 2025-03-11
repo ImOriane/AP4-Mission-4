@@ -1,4 +1,26 @@
-<!-- HTML -->
+
+<?php
+include('connexion.php');
+// Vérifier si les données ont été envoyées via POST
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Récupérer les données du formulaire
+    $reference = $_POST['Reference'];
+    $desiproduit= $_POST['Desgination_du_produit'];
+    $PU = $_POST['pu'];
+
+
+    // Préparer la requête SQL pour insérer les données dans la base
+    $sql = "INSERT INTO prestation (Reference, Desgination_du_produit, pu) VALUES ('$reference', '$desiproduit', '$PU')";
+
+    // Exécuter la requête
+    if ($conn->query($sql) === TRUE) {
+        echo "Nouvel utilisateur ajouté avec succès !";
+    } else {
+        echo "Erreur: " . $sql . "<br>" . $conn->error;
+    }
+}
+$conn->close();
+?>
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
@@ -31,8 +53,8 @@
             
             <div class="content-GBB-Prestation">
              
-
-                <div class="formulairepresta">
+            <form action="ajouter_utilisateur.php" method="POST">
+                <div class="formulairepresta" >
                     <div class="form">
                         <h2>Gestion Prestation</h2>
                         <br>
