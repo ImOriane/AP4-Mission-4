@@ -1,4 +1,22 @@
-<!-- HTML -->
+
+<?php
+include('connexion.php');
+// Vérifier si les données ont été envoyées via POST
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Récupérer les données du formulaire
+
+    $code_ligue= $_POST['code_ligue'];
+
+
+
+    // Préparer la requête SQL pour insérer les données dans la base
+
+    $sql = "SELECT * FROM ligue WHERE code_ligue LIKE '%$code_ligue%'";
+
+ 
+}
+$conn->close();
+?>
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
@@ -35,11 +53,11 @@
                             <h2>Outil de factures</h2> 
                             Référence :
                             <br>
-                            <input type="text" placeholder="Réference">
+                            <input type="text"  name ="Reference" placeholder="Réference">
                             <br>
                             Code client
                             <br>
-                            <input type="text" placeholder="Code client">
+                            <input type="text" name= "code_ligue "placeholder="Code client">
                             <br>
                             <br>
                             Numero facture :<br>

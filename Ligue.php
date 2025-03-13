@@ -1,3 +1,26 @@
+<?php
+include('connexion.php');
+// Vérifier si les données ont été envoyées via POST
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Récupérer les données du formulaire
+    $reference = $_POST['Reference'];
+    $desiproduit= $_POST['Designation_du_produit'];
+    $PU = $_POST['pu'];
+
+
+    // Préparer la requête SQL pour insérer les données dans la base
+    $sql = "INSERT INTO prestation (Reference, Designation_du_produit, pu) VALUES ('$reference', '$desiproduit', '$PU')";
+
+    // Exécuter la requête
+    if ($conn->query($sql) === TRUE) {
+        echo '<div class="ajouter">Prestation ajoutée!</div>';
+
+    } else {
+        echo "Erreur: " . $sql . "<br>" . $conn->error;
+    }
+}
+$conn->close();
+?>
 <!-- HTML -->
 <!DOCTYPE html>
 <head>
