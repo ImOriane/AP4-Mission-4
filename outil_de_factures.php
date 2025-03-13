@@ -4,16 +4,30 @@ include('connexion.php');
 // Vérifier si les données ont été envoyées via POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Récupérer les données du formulaire
-
-    $code_ligue= $_POST['code_ligue'];
-
+    $reference = $_POST['Reference'];
+    $codeligue= $_POST['code_ligue'];
+    $date= $_POST['date'];
+    $quantite= $_POST['quantite'];
+    $numfacture= $_POST['numfacture'];
 
 
     // Préparer la requête SQL pour insérer les données dans la base
+    $sql = "INSERT INTO facture (numfacture, facture_date,code_ligue) VALUES ('$numfacture', '$date' , '$codeligue')";
+    $sql2 = "INSERT INTO ligue_facture (Reference,quantite) VALUES ('$reference','$quantite')";
+    // Exécuter la requête
+    if ($conn->query($sql) === TRUE) {
+        echo '<div class="ajouter">Prestation ajoutée!</div>';
 
-    $sql = "SELECT * FROM ligue WHERE code_ligue LIKE '%$code_ligue%'";
+    } else {
+        echo "Erreur: " . $sql . "<br>" . $conn->error;
+    }
 
- 
+    if ($conn->query($sql2) === TRUE) {
+        echo '<div class="ajouter">Prestation ajoutée!</div>';
+
+    } else {
+        echo "Erreur: " . $sql2 . "<br>" . $conn->error;
+    }
 }
 $conn->close();
 ?>
@@ -47,7 +61,7 @@ $conn->close();
         </div>
             <!-- Section droite -->
             <div class="contentfacture">
-
+                <form action="outil_de_factures.php" method="POST">
                     <div class="formulairefacture">
                         <div class="fact">
                             <h2>Outil de factures</h2> 
@@ -57,26 +71,26 @@ $conn->close();
                             <br>
                             Code client
                             <br>
-                            <input type="text" name= "code_ligue "placeholder="Code client">
+                            <input type="text" name= "code_ligue"placeholder="Code client">
                             <br>
                             <br>
                             Numero facture :<br>
-                            <input type="text" placeholder="Numero facture">
+                            <input type="text" name="numfacture" placeholder="Numero facture">
                             <br>
                             <br>
                             Date:<br>
-                            <input type="date">         
+                            <input type="date" name="date">         
                             <br>                                
                             <br>
                             Quantité:<br>
-                            <input type="number" min="0.00" max="10000.00" step="0.01" value="1.00" />                         
+                            <input type="number" name="quantite" min="0.00" max="10000.00" step="0.01" value="1.00" />                         
                             <br>
                             <br>
                             <button class="formbutton">Annuler</button>
                             <button class="formbutton">Génerer</button>
                         </div>
                     </div>
-                
+                </form>
                 
             </div>
         </div>

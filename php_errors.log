@@ -36,3 +36,31 @@ Stack trace:
 #0 /media/sf_DOSPARTAGERPHP/AP4-Mission-4/Ligue.php(18): mysqli->query()
 #1 {main}
   thrown in /media/sf_DOSPARTAGERPHP/AP4-Mission-4/Ligue.php on line 18
+[13-Mar-2025 14:08:00 UTC] PHP Warning:  Undefined array key "code_ligue" in /media/sf_OrianeDoPHP/AP4-Mission 4/outil_de_factures.php on line 8
+[13-Mar-2025 14:08:00 UTC] PHP Warning:  Undefined array key "pu" in /media/sf_OrianeDoPHP/AP4-Mission 4/outil_de_factures.php on line 9
+[13-Mar-2025 14:08:00 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column count doesn't match value count at row 1 in /media/sf_OrianeDoPHP/AP4-Mission 4/outil_de_factures.php:16
+Stack trace:
+#0 /media/sf_OrianeDoPHP/AP4-Mission 4/outil_de_factures.php(16): mysqli->query()
+#1 {main}
+  thrown in /media/sf_OrianeDoPHP/AP4-Mission 4/outil_de_factures.php on line 16
+[13-Mar-2025 14:09:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column count doesn't match value count at row 1 in /media/sf_OrianeDoPHP/AP4-Mission 4/outil_de_factures.php:15
+Stack trace:
+#0 /media/sf_OrianeDoPHP/AP4-Mission 4/outil_de_factures.php(15): mysqli->query()
+#1 {main}
+  thrown in /media/sf_OrianeDoPHP/AP4-Mission 4/outil_de_factures.php on line 15
+[13-Mar-2025 14:15:59 UTC] PHP Warning:  Undefined variable $codeligue in /media/sf_OrianeDoPHP/AP4-Mission 4/outil_de_factures.php on line 15
+[13-Mar-2025 14:15:59 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '')' at line 1 in /media/sf_OrianeDoPHP/AP4-Mission 4/outil_de_factures.php:18
+Stack trace:
+#0 /media/sf_OrianeDoPHP/AP4-Mission 4/outil_de_factures.php(18): mysqli->query()
+#1 {main}
+  thrown in /media/sf_OrianeDoPHP/AP4-Mission 4/outil_de_factures.php on line 18
+[13-Mar-2025 14:16:34 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '')' at line 1 in /media/sf_OrianeDoPHP/AP4-Mission 4/outil_de_factures.php:18
+Stack trace:
+#0 /media/sf_OrianeDoPHP/AP4-Mission 4/outil_de_factures.php(18): mysqli->query()
+#1 {main}
+  thrown in /media/sf_OrianeDoPHP/AP4-Mission 4/outil_de_factures.php on line 18
+[13-Mar-2025 14:19:00 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`AP5`.`facture`, CONSTRAINT `FK_Facture_Ligue` FOREIGN KEY (`code_ligue`) REFERENCES `ligue` (`code_ligue`)) in /media/sf_OrianeDoPHP/AP4-Mission 4/outil_de_factures.php:18
+Stack trace:
+#0 /media/sf_OrianeDoPHP/AP4-Mission 4/outil_de_factures.php(18): mysqli->query()
+#1 {main}
+  thrown in /media/sf_OrianeDoPHP/AP4-Mission 4/outil_de_factures.php on line 18
