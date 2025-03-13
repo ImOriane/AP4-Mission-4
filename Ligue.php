@@ -3,17 +3,20 @@ include('connexion.php');
 // Vérifier si les données ont été envoyées via POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Récupérer les données du formulaire
-    $reference = $_POST['Reference'];
-    $desiproduit= $_POST['Designation_du_produit'];
-    $PU = $_POST['pu'];
+    $code_ligue = $_POST['code_ligue'];
+    $nom_ligue = $_POST['nom_ligue'];
+    $tresorier = $_POST['tresorier'];
+    $adresse_tresorier = $_POST['adresse_tresorier'];
+    $ville_tresorier = $_POST['ville_tresorier'];
+    $sport = $_POST['sport'];
 
 
     // Préparer la requête SQL pour insérer les données dans la base
-    $sql = "INSERT INTO prestation (Reference, Designation_du_produit, pu) VALUES ('$reference', '$desiproduit', '$PU')";
+    $sql = "INSERT INTO ligue (code_ligue, nom_ligue, tresorier,adresse_tresorier,ville_tresorier,sport) VALUES ('$code_ligue', '$nom_ligue', '$tresorier', '$adresse_tresorier', '$ville_tresorier', '$sport')";
 
     // Exécuter la requête
     if ($conn->query($sql) === TRUE) {
-        echo '<div class="ajouter">Prestation ajoutée!</div>';
+        echo '<div class="ajouter">Ligue ajoutée!</div>';
 
     } else {
         echo "Erreur: " . $sql . "<br>" . $conn->error;
@@ -52,46 +55,47 @@ $conn->close();
         </div>
             <!-- Section droite -->
             <div class="content-GBB-Ligue">
-               
-                <div class="formulaire">
-                    <div class="form"> 
-                        <h2>Gestion Ligue</h2>
-                        <br>
-                        Code Ligue :<br>
-                        <input type="text" placeholder="Code ligue">                      
-                        <br>
-                        <br>
-                        Nom de la ligue :<br>
-                        <input type="text" placeholder="Nom de la ligue">                      
-                        <br>
-                        <br>
-                        Trésorier :
-                        <br>
-                        <input type="text" placeholder="Trésorier">
-                        <br>
-                        <br>
-                        Recevoir chez vous? :
-                        <button onclick="verifierReponse(true)">Oui</button>
-                        <button onclick="verifierReponse(false)">Non</button>
-                        <br>
-                        <br>
-                        <div class="cacher">
-                            Adresse du trésorier :<br>
-                            <input type="text" placeholder="Adresse du trésorier">
+                <form action="Ligue.php" method="POST">
+                    <div class="formulaire">
+                        <div class="form"> 
+                            <h2>Gestion Ligue</h2>
+                            <br>
+                            Code Ligue :<br>
+                            <input type="text" name="code_ligue" placeholder="Code ligue">                      
                             <br>
                             <br>
-                            Ville trésorier : <br>
-                            <input type="text" placeholder="Ville trésorier ">
+                            Nom de la ligue :<br>
+                            <input type="text" name="nom_ligue" placeholder="Nom de la ligue">                      
                             <br>
                             <br>
+                            Trésorier :
+                            <br>
+                            <input type="text" name="tresorier" placeholder="Trésorier">
+                            <br>
+                            <br>
+                            Recevoir chez vous? :
+                            <button type="button" onclick="verifierReponse(true)">Oui</button>
+                            <button type="button" onclick="verifierReponse(false)">Non</button>
+                            <br>
+                            <br>
+                            <div class="cacher">
+                                Adresse du trésorier :<br>
+                                <input type="text" name="adresse_tresorier" placeholder="Adresse du trésorier">
+                                <br>
+                                <br>
+                                Ville trésorier : <br>
+                                <input type="text" name="ville_tresorier" placeholder="Ville trésorier ">
+                                <br>
+                                <br>
+                            </div>
+                            Sport de la ligue:<br>
+                            <input type="text" name="sport" placeholder="Sport de la ligue">         
+                            <br>
+                                
+                            <br>
+                            <button type="reset" class="formbutton">Annuler</button>
+                            <button type="submit" class="formbutton">Enregistrer</button>
                         </div>
-                        Sport de la ligue:<br>
-                        <input type="text" placeholder="Sport de la ligue">         
-                        <br>
-                            
-                        <br>
-                        <button class="formbutton">Annuler</button>
-                        <button class="formbutton">Enregistrer</button>
                     </div>
                 </div>
             </div>

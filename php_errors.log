@@ -1,1 +1,38 @@
-[13-Mar-2025 13:13:03 UTC] PHP Parse error:  syntax error, unexpected identifier "ajouter" in /media/sf_OrianeDoPHP/AP4-Mission 4/outil_de_factures.php on line 18
+[13-Mar-2025 13:05:31 UTC] PHP Warning:  Undefined variable $reference in /media/sf_DOSPARTAGERPHP/AP4-Mission-4/Ligue.php on line 15
+[13-Mar-2025 13:05:31 UTC] PHP Warning:  Undefined variable $desiproduit in /media/sf_DOSPARTAGERPHP/AP4-Mission-4/Ligue.php on line 15
+[13-Mar-2025 13:05:31 UTC] PHP Warning:  Undefined variable $PU in /media/sf_DOSPARTAGERPHP/AP4-Mission-4/Ligue.php on line 15
+[13-Mar-2025 13:05:31 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'Reference' in 'field list' in /media/sf_DOSPARTAGERPHP/AP4-Mission-4/Ligue.php:18
+Stack trace:
+#0 /media/sf_DOSPARTAGERPHP/AP4-Mission-4/Ligue.php(18): mysqli->query()
+#1 {main}
+  thrown in /media/sf_DOSPARTAGERPHP/AP4-Mission-4/Ligue.php on line 18
+[13-Mar-2025 13:07:44 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'test' for key 'ligue.PRIMARY' in /media/sf_DOSPARTAGERPHP/AP4-Mission-4/Ligue.php:18
+Stack trace:
+#0 /media/sf_DOSPARTAGERPHP/AP4-Mission-4/Ligue.php(18): mysqli->query()
+#1 {main}
+  thrown in /media/sf_DOSPARTAGERPHP/AP4-Mission-4/Ligue.php on line 18
+[13-Mar-2025 13:08:06 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'ligue.PRIMARY' in /media/sf_DOSPARTAGERPHP/AP4-Mission-4/Ligue.php:18
+Stack trace:
+#0 /media/sf_DOSPARTAGERPHP/AP4-Mission-4/Ligue.php(18): mysqli->query()
+#1 {main}
+  thrown in /media/sf_DOSPARTAGERPHP/AP4-Mission-4/Ligue.php on line 18
+[13-Mar-2025 13:08:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'ligue.PRIMARY' in /media/sf_DOSPARTAGERPHP/AP4-Mission-4/Ligue.php:18
+Stack trace:
+#0 /media/sf_DOSPARTAGERPHP/AP4-Mission-4/Ligue.php(18): mysqli->query()
+#1 {main}
+  thrown in /media/sf_DOSPARTAGERPHP/AP4-Mission-4/Ligue.php on line 18
+[13-Mar-2025 13:08:31 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'ligue.PRIMARY' in /media/sf_DOSPARTAGERPHP/AP4-Mission-4/Ligue.php:18
+Stack trace:
+#0 /media/sf_DOSPARTAGERPHP/AP4-Mission-4/Ligue.php(18): mysqli->query()
+#1 {main}
+  thrown in /media/sf_DOSPARTAGERPHP/AP4-Mission-4/Ligue.php on line 18
+[13-Mar-2025 13:10:48 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'test3ts' for key 'ligue.PRIMARY' in /media/sf_DOSPARTAGERPHP/AP4-Mission-4/Ligue.php:18
+Stack trace:
+#0 /media/sf_DOSPARTAGERPHP/AP4-Mission-4/Ligue.php(18): mysqli->query()
+#1 {main}
+  thrown in /media/sf_DOSPARTAGERPHP/AP4-Mission-4/Ligue.php on line 18
+[13-Mar-2025 13:10:58 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'ligue.PRIMARY' in /media/sf_DOSPARTAGERPHP/AP4-Mission-4/Ligue.php:18
+Stack trace:
+#0 /media/sf_DOSPARTAGERPHP/AP4-Mission-4/Ligue.php(18): mysqli->query()
+#1 {main}
+  thrown in /media/sf_DOSPARTAGERPHP/AP4-Mission-4/Ligue.php on line 18
