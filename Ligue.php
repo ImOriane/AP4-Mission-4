@@ -48,8 +48,8 @@ $conn->close();
 
             <!-- Boutons de la barre latérale -->
             <div class="boutonsbar">
-                <button class="sidebar-btn" onclick="location.href='outil_de_factures.html'">Création de factures</button>
-                <button class="sidebar-btn" onclick="location.href='Archive_factures.html'">Retrouver factures</button>
+                <button class="sidebar-btn" onclick="location.href='outil_de_factures.php'">Création de factures</button>
+                <button class="sidebar-btn" onclick="location.href='Archive_factures.php'">Retrouver factures</button>
                 <button class="sidebar-btn" onclick="location.href='Gestion_BD.html'">Gestion ligues et prestations</button>
             </div>
         </div>
