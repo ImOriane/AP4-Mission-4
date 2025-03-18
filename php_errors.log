@@ -64,3 +64,33 @@ Stack trace:
 #0 /media/sf_OrianeDoPHP/AP4-Mission 4/outil_de_factures.php(18): mysqli->query()
 #1 {main}
   thrown in /media/sf_OrianeDoPHP/AP4-Mission 4/outil_de_factures.php on line 18
+[18-Mar-2025 08:18:57 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'numfacture' in where clause is ambiguous in /media/sf_OrianeDoPHP/AP4-Mission 4/imprimer_facture.php:12
+Stack trace:
+#0 /media/sf_OrianeDoPHP/AP4-Mission 4/imprimer_facture.php(12): mysqli->prepare()
+#1 {main}
+  thrown in /media/sf_OrianeDoPHP/AP4-Mission 4/imprimer_facture.php on line 12
+[18-Mar-2025 08:19:23 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'numfacture' in where clause is ambiguous in /media/sf_OrianeDoPHP/AP4-Mission 4/imprimer_facture.php:12
+Stack trace:
+#0 /media/sf_OrianeDoPHP/AP4-Mission 4/imprimer_facture.php(12): mysqli->prepare()
+#1 {main}
+  thrown in /media/sf_OrianeDoPHP/AP4-Mission 4/imprimer_facture.php on line 12
+[18-Mar-2025 08:20:29 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Column 'numfacture' in where clause is ambiguous in /media/sf_OrianeDoPHP/AP4-Mission 4/imprimer_facture.php:12
+Stack trace:
+#0 /media/sf_OrianeDoPHP/AP4-Mission 4/imprimer_facture.php(12): mysqli->prepare()
+#1 {main}
+  thrown in /media/sf_OrianeDoPHP/AP4-Mission 4/imprimer_facture.php on line 12
+[18-Mar-2025 08:33:34 UTC] PHP Warning:  A non-numeric value encountered in /media/sf_OrianeDoPHP/AP4-Mission 4/imprimer_facture.php on line 22
+[18-Mar-2025 08:33:36 UTC] PHP Warning:  A non-numeric value encountered in /media/sf_OrianeDoPHP/AP4-Mission 4/imprimer_facture.php on line 22
+[18-Mar-2025 08:34:01 UTC] PHP Parse error:  syntax error, unexpected variable "$montant" in /media/sf_OrianeDoPHP/AP4-Mission 4/imprimer_facture.php on line 22
+[18-Mar-2025 08:35:15 UTC] PHP Warning:  A non-numeric value encountered in /media/sf_OrianeDoPHP/AP4-Mission 4/imprimer_facture.php on line 22
+[18-Mar-2025 08:35:43 UTC] PHP Warning:  A non-numeric value encountered in /media/sf_OrianeDoPHP/AP4-Mission 4/imprimer_facture.php on line 22
+[18-Mar-2025 09:02:29 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '2208' for key 'facture.PRIMARY' in /media/sf_OrianeDoPHP/AP4-Mission 4/outil_de_factures.php:18
+Stack trace:
+#0 /media/sf_OrianeDoPHP/AP4-Mission 4/outil_de_factures.php(18): mysqli->query()
+#1 {main}
+  thrown in /media/sf_OrianeDoPHP/AP4-Mission 4/outil_de_factures.php on line 18
+[18-Mar-2025 09:02:38 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Field 'numfacture' doesn't have a default value in /media/sf_OrianeDoPHP/AP4-Mission 4/outil_de_factures.php:25
+Stack trace:
+#0 /media/sf_OrianeDoPHP/AP4-Mission 4/outil_de_factures.php(25): mysqli->query()
+#1 {main}
+  thrown in /media/sf_OrianeDoPHP/AP4-Mission 4/outil_de_factures.php on line 25
