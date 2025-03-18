@@ -45,7 +45,12 @@ $conn->close();
     <h1>Facture #<?php echo $facture['numfacture']; ?></h1>
     <p><strong>Date :</strong> <?php echo $facture['facture_date']; ?></p>
     <p><strong>Échéance :</strong> <?php echo $facture['echeance']; ?></p>
-    <p><strong>Code Ligue :</strong> <?php echo $facture['code_ligue']; ?></p>
+    <p><strong>Code Client :</strong> <?php echo $facture['code_ligue']; ?></p>
+    <p><strong>Référence :</strong> <?php echo $facture['code_ligue']; ?></p>
+    <p><strong>Désignation:</strong> <?php echo $facture['code_ligue']; ?></p>
+    <p><strong>Quantité:</strong> <?php echo $facture['code_ligue']; ?></p>
+    <p><strong>Prix Unitaire:</strong> <?php echo $facture['code_ligue']; ?></p>
+    <p><strong>Montant</strong> <?php echo $facture['code_ligue']; ?></p>
     <button onclick="imprimerPage()">Imprimer</button>
 </div>
 </body>
